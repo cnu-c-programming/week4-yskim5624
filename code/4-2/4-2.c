@@ -8,18 +8,18 @@ int sum(int arr[], int n) {
 }
 
 double average(int arr[], int n) {
-    double result = 0;
+    double result = 0.0;
     for(int i=0; i<n; i++)
         result += arr[i];
     return result / n;
 }
 
 int max(int arr[], int n) {
-    int max = arr[0];
+    int maxVal = arr[0];
     for(int i=1; i<n; i++)
-        if(max < arr[i])
-            max = arr[i];
-    return max;
+        if(maxVal < arr[i])
+            maxVal = arr[i];
+    return maxVal;
 }
 
 int main() {
