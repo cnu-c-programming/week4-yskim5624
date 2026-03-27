@@ -22,7 +22,7 @@ int main() {
     int d[] = {10, 20, 30};
 
     for(int i=0; i<(sizeof(d)/sizeof(int)); i++)
-        printf("%d ", a[i]);
+        printf("%d ", d[i]);
     printf("\n");
 
     return 0;
