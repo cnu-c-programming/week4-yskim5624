@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int sum(int arr[], int n) {
+    if (n <= 0) return 0;
     int result = 0;
     for(int i=0; i<n; i++)
         result += arr[i];
@@ -8,6 +9,7 @@ int sum(int arr[], int n) {
 }
 
 double average(int arr[], int n) {
+    if (n <= 0) return 0.0;
     double result = 0.0;
     for(int i=0; i<n; i++)
         result += arr[i];
@@ -15,6 +17,7 @@ double average(int arr[], int n) {
 }
 
 int max(int arr[], int n) {
+    if (arr == NULL || n <= 0) return 0;
     int maxVal = arr[0];
     for(int i=1; i<n; i++)
         if(maxVal < arr[i])
