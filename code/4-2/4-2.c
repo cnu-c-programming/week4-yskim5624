@@ -2,6 +2,7 @@
 
 int sum(int arr[], int n) {
     int result = 0;
+    if(n == 0) return 0;
     for(int i=0; i<n; i++)
         result += arr[i];
     return result;
@@ -9,6 +10,7 @@ int sum(int arr[], int n) {
 
 double average(int arr[], int n) {
     double result = 0.0;
+    if(n == 0) return 0.0;
     for(int i=0; i<n; i++)
         result += arr[i];
     return result / n;
@@ -16,6 +18,7 @@ double average(int arr[], int n) {
 
 int max(int arr[], int n) {
     int maxVal = arr[0];
+    if(n == 0) return 0;
     for(int i=1; i<n; i++)
         if(maxVal < arr[i])
             maxVal = arr[i];
