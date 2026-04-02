@@ -2,18 +2,13 @@
 
 int sum(int arr[], int n) {
     int result = 0;
-    if(n == 0) return 0;
     for(int i=0; i<n; i++)
         result += arr[i];
     return result;
 }
 
 double average(int arr[], int n) {
-    double result = 0.0;
-    if(n == 0) return 0.0;
-    for(int i=0; i<n; i++)
-        result += arr[i];
-    return result / n;
+    return (double)sum(arr, n) / n;
 }
 
 int max(int arr[], int n) {
